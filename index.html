@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+    <style>
+        img {
+            width: 500px;
+            height: 300px;
+            border: 8px solid rgb(232, 225, 220);
+        }
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Slideshow</h2>
+    <img id="slide" src="image.jpg">
+    <script>     
+        let images = [
+            "image.jpg",
+            "image2.jpg",
+            "image3.jpg",
+            "image4.jpg"
+        ];
+        let index = 0;
+        function slideshow() {
+            document.getElementById("slide").src = images[index];
+            index++;    
+            if(index == images.length) {
+                index = 0;
+            }
+        }
+ setInterval(slideshow, 2000);
+    </script>
+</body>
+</html>
