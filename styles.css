@@ -1,0 +1,10 @@
+:root{--bg:#0b1020;--muted:#94a3b8;--card:#0f1724}
+body{margin:0;background:var(--bg);color:#e6eef8;font-family:Inter,Arial,sans-serif}
+.erp-app{display:flex;min-height:100vh}
+.erp-nav{width:220px;background:#081028;padding:20px;border-right:1px solid rgba(255,255,255,0.03)}
+.erp-nav .brand{font-weight:800;margin-bottom:18px}
+.erp-nav ul{list-style:none;padding:0;margin:0}
+.erp-nav li{padding:8px 10px;border-radius:8px;cursor:pointer;color:var(--muted)}
+.erp-nav li.active{background:#0f2a4a;color:#fff}
+.erp-main{flex:1;padding:28px}
+h2{margin-top:0}
